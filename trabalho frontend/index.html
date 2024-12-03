@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casa dos Gains</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="imagens/icone.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="script/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Casa dos Gains</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#treinos">Treino</a></li>
+        <li><a href="#nutricao">Nutrição</a></li>
+        <li><a href="#motivacao">Motivação</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="introducao">
+      <h2>Você quer colocar o shape no ano de 2025? Então você está no lugar certo!</h2>
+      <iframe 
+        src="https://www.youtube.com/embed/A96l7ok0qjk" 
+        title="Vídeo de musculação" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section id="treinos">
+      <h2>Treinos</h2>
+      <label for="grupoMuscular">Escolha o grupo muscular:</label>
+      <select id="grupoMuscular">
+        <option value="">Selecione...</option>
+        <option value="peito">Peito</option>
+        <option value="costas">Costas</option>
+        <option value="pernas">Pernas</option>
+        <option value="bracos">Braços</option>
+        <option value="ombro">Ombro</option>
+      </select>
+      <div id="tabelaExercicios"></div>
+
+    <section id="nutricao">
+      <h2>Nutrição</h2>
+      <div class="nutricao-explicacao">
+        <p>
+          <strong>Bulking</strong> é a fase em que o objetivo é ganhar massa muscular e peso,
+          aumentando o consumo calórico acima do gasto. <strong>Cutting</strong> é o processo inverso, 
+          focado em perder gordura corporal, mantendo ao máximo a massa magra, com uma dieta de 
+          calorias reduzidas.
+        </p>
+      </div>
+      <div class="nutricao-dicas">
+        <div>
+          <h3>Bulking</h3>
+          <ul>
+            <li>Calorias: +10-20% acima do gasto diário</li>
+            <li>Fontes de proteínas: Frango, ovos, carne, whey</li>
+            <li>Carboidratos: Batata-doce, arroz, aveia</li>
+            <li>Gorduras: Castanhas, azeite, abacate</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Cutting</h3>
+          <ul>
+            <li>Calorias: -10-20% abaixo do gasto diário</li>
+            <li>Fontes de proteínas: Peixes, claras de ovo, peito de frango</li>
+            <li>Carboidratos controlados: Arroz integral, quinoa</li>
+            <li>Gorduras moderadas: Óleo de coco, amêndoas</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="motivacao">
+      <h2>Motivação</h2>
+      <p>Aqui vão alguns vídeos para você ficar ainda mais motivado para treinar:</p>
+
+      <div class="carousel">
+        <button class="carousel-btn prev">&#9664;</button>
+        <div class="carousel-video">
+          <iframe src="https://www.youtube.com/embed/T3M9rCkcBM8" allowfullscreen></iframe>
+        </div>
+        <button class="carousel-btn next">&#9654;</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Casa dos Gains. Siga-nos no Insta @CasaDosGains</p>
+  </footer>
+
+</body>
+</html>

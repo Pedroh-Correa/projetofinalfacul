@@ -1,0 +1,214 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: hsl(0, 8%, 85%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: url("../imagens/banner.jpg");
+  color: #ff5722;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Bebas Neue', sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+nav {
+  background-color: #ff562200;
+  margin-top: 10px;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ff5722;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+#introducao {
+  text-align: center;
+  margin: 2em 0;
+}
+
+#introducao h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+#introducao iframe {
+  width: 90%;
+  max-width: 720px;
+  height: 405px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #ff5722;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#tabelaExercicios{
+  background-color: white;
+}
+table th {
+  background-color: #ff5722;
+  color: #fff;
+}
+
+blockquote {
+  font-style: italic;
+  color: #555;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.nutricao-dicas {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  flex-wrap: wrap; /* Ajuste para dispositivos menores */
+}
+
+.nutricao-dicas div {
+  background-color: #ff5722;
+  color: #ffffff;
+  border: none;
+  padding: 15px;
+  width: 45%;
+  margin: 10px 0; /* Espaço entre as caixas */
+  border-radius: 8px;
+}
+
+.nutricao-dicas h3 {
+  color: white;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 20px 0;
+}
+
+.carousel-video {
+  width: 80%;
+  text-align: center;
+}
+
+.carousel-video iframe {
+  width: 90%;
+  max-width: 720px;
+  height: 405px;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.carousel-btn {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.carousel-btn:hover {
+  background-color: #e64a19;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .nutricao-dicas div {
+    width: 100%; /* Ajusta para largura total em telas menores */
+  }
+
+  #introducao iframe,
+  .carousel-video iframe {
+    width: 100%; /* Ocupa toda a largura disponível */
+    height: auto; /* Altura proporcional */
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+  }
+
+  .carousel-btn {
+    padding: 5px 10px;
+    font-size: 1.2rem;
+  }
+}
